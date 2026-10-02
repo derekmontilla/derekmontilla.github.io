@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects | Derek Montilla</title>
+  <meta name="description" content="Lab and coursework projects by Derek Montilla: packet analysis, network troubleshooting, system hardening, scripting, and database design.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Space+Grotesk:wght@500;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="wrapper site-header__inner">
+      <a class="logo" href="index.html">Derek <span>Montilla</span></a>
+      <nav aria-label="Main">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="index.html">Home</a></li>
+          <li><a class="nav__link" href="about.html">About</a></li>
+          <li><a class="nav__link" href="projects.html" aria-current="page">Projects</a></li>
+          <li><a class="nav__link" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section">
+      <div class="wrapper">
+        <p class="eyebrow">Selected work</p>
+        <h1>Projects</h1>
+        <p class="lead">Six builds from my coursework and lab environment. Each one started as an assignment and ended as something I'd be comfortable walking a hiring manager through.</p>
+
+        <div class="card-grid">
+
+          <article class="card">
+            <img class="card__img"
+                 src="images/project-wireshark-800.webp"
+                 srcset="images/project-wireshark-400.webp 400w,
+                         images/project-wireshark-800.webp 800w,
+                         images/project-wireshark-1200.webp 1200w"
+                 sizes="(min-width: 60rem) 22rem, (min-width: 40rem) 45vw, 90vw"
+                 width="800" height="500"
+                 alt="Wireshark capture window showing a filtered TCP.">
+            <div class="card__body">
+              <h2 class="card__title">Protocol capture &amp; analysis</h2>
+              <p class="card__text">Captured and dissected DNS lookups, the TCP three-way handshake, ICMP echoes, and ARP requests in a virtualized lab. Then ran a telnet session and captured the credentials in plaintext before replacing the service with OpenSSH and proving the difference on the wire.</p>
+              <ul class="card__tags">
+                <li class="tag">Wireshark</li>
+                <li class="tag">TCP/IP</li>
+                <li class="tag">SSH</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="card">
+            <img class="card__img"
+                 src="images/project-packettracer-800.webp"
+                 srcset="images/project-packettracer-400.webp 400w,
+                         images/project-packettracer-800.webp 800w,
+                         images/project-packettracer-1200.webp 1200w"
+                 sizes="(min-width: 60rem) 22rem, (min-width: 40rem) 45vw, 90vw"
+                 width="800" height="500"
+                 loading="lazy"
+                 alt="Cisco Packet Tracer topology with switches, routers, and end devices.">
+            <div class="card__body">
+              <h2 class="card__title">Switched network troubleshooting</h2>
+              <p class="card__text">A Packet Tracer capstone built around reading MAC address tables and tracking down a duplicate IP conflict across a switched topology the kind of fault that looks random until you check the table.</p>
+              <ul class="card__tags">
+                <li class="tag">Packet Tracer</li>
+                <li class="tag">Switching</li>
+                <li class="tag">Addressing</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="card">
+            <img class="card__img"
+                 src="images/project-hardening-800.webp"
+                 srcset="images/project-hardening-400.webp 400w,
+                         images/project-hardening-800.webp 800w,
+                         images/project-hardening-1200.webp 1200w"
+                 sizes="(min-width: 60rem) 22rem, (min-width: 40rem) 45vw, 90vw"
+                 width="800" height="500"
+                 loading="lazy"
+                 alt="Windows Local Security Policy editor showing password policy settings.">
+            <div class="card__body">
+              <h2 class="card__title">Windows hardening lab</h2>
+              <p class="card__text">User and group management, NTFS permission inheritance, EFS encrypted folders, and password policy enforced through the Local Security Policy editor plus scheduled maintenance tasks and restore points as a rollback plan.</p>
+              <ul class="card__tags">
+                <li class="tag">Windows</li>
+                <li class="tag">NTFS</li>
+                <li class="tag">Policy</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="card">
+            <img class="card__img"
+                 src="images/project-bash-800.webp"
+                 srcset="images/project-bash-400.webp 400w,
+                         images/project-bash-800.webp 800w,
+                         images/project-bash-1200.webp 1200w"
+                 sizes="(min-width: 60rem) 22rem, (min-width: 40rem) 45vw, 90vw"
+                 width="800" height="500"
+                 loading="lazy"
+                 alt="Terminal window running a Bash script">
+            <div class="card__body">
+              <h2 class="card__title">Scripting toolkit</h2>
+              <p class="card__text">Bash and Python utilities with real command line interfaces <code>getopts</code> and <code>argparse</code> for flags, automated archive extraction, and regex driven batch file renaming. Built and version-controlled in WSL2.</p>
+              <ul class="card__tags">
+                <li class="tag">Bash</li>
+                <li class="tag">Python</li>
+                <li class="tag">Regex</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="card">
+            <img class="card__img"
+                 src="images/project-sql-800.webp"
+                 srcset="images/project-sql-400.webp 400w,
+                         images/project-sql-800.webp 800w,
+                         images/project-sql-1200.webp 1200w"
+                 sizes="(min-width: 60rem) 22rem, (min-width: 40rem) 45vw, 90vw"
+                 width="800" height="500"
+                 loading="lazy"
+                 alt="SQL editor showing a multi table join query.">
+            <div class="card__body">
+              <h2 class="card__title">Relational schema &amp; normalization</h2>
+              <p class="card__text">A multi table Oracle SQL schema with inserts, updates, and joins, paired with a normalization exercise taking a messy flat table from first through third normal form.</p>
+              <ul class="card__tags">
+                <li class="tag">Oracle SQL</li>
+                <li class="tag">Joins</li>
+                <li class="tag">3NF</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="card">
+            <img class="card__img"
+                 src="images/project-web-800.webp"
+                 srcset="images/project-web-400.webp 400w,
+                         images/project-web-800.webp 800w,
+                         images/project-web-1200.webp 1200w"
+                 sizes="(min-width: 60rem) 22rem, (min-width: 40rem) 45vw, 90vw"
+                 width="800" height="500"
+                 loading="lazy"
+                 alt="Responsive website shown at phone and desktop widths.">
+            <div class="card__body">
+              <h2 class="card__title">Responsive front end build</h2>
+              <p class="card__text">A four page site built from scratch with semantic HTML, a token driven stylesheet, CSS Grid page layouts, and Flexbox components validated to zero W3C errors and tested against WAVE and Lighthouse at every breakpoint.</p>
+              <ul class="card__tags">
+                <li class="tag">HTML</li>
+                <li class="tag">CSS Grid</li>
+                <li class="tag">Accessibility</li>
+              </ul>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrapper site-footer__inner">
+      <p>&copy; 2026 Derek Montilla. Built with HTML and CSS for WEB 1400.</p>
+      <p><a href="https://github.com/derekjmontilla">github.com/derekjmontilla</a></p>
+    </div>
+  </footer>
+</body>
+</html>
